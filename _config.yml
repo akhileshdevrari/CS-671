@@ -17,8 +17,8 @@ title: CS-671 Deep Learning and its Applications
 # email: devrari.akhilesh@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Here we maintain all assignments for this course CS-671 (Deep Learning and its Applications) at IIT Mandi.
-baseurl: "https://akhileshdevrari.github.io/CS-671/" # the subpath of your site, e.g. /blog
-url: "https://akhileshdevrari.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "_site/" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  akhileshdevrari
 
