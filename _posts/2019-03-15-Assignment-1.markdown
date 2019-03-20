@@ -38,7 +38,7 @@ We coded the solution using different approaches.
 
 ### 1.  Create computational graph using Tensorboard
 
->![TensorBoard Graph](https://github.com/akhileshdevrari/CS-671/tree/master/img/tb.png)
+>![TensorBoard Graph]({{site.baseurl}}/img/tb.png)
 
 ### 2.  Compare performance of code written using tensorflow with normal python code
 
