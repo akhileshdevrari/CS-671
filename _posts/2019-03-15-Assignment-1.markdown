@@ -36,7 +36,7 @@ We coded the solution using different approaches.
 
 ### 1.  Create computational graph using Tensorboard
 
->![tb_img](tb.png)
+>![TensorBoard Graph](/img/tb.png)
 
 ### 2.  Compare performance of code written using tensorflow with normal python code
 
