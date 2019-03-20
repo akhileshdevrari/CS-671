@@ -1,3 +1,4 @@
+
 ---
 layout: post
 title:  "Assignment-1"
@@ -5,7 +6,7 @@ date:   2019-03-15 18:47:43 +0530
 categories: jekyll update
 ---
 
-Detailed problem statement and our code/submissions is available [here][problem-statement-assgn1].
+Detailed problem statement and our code/submissions is available [here](https://github.com/akhileshdevrari/CS-671/tree/master/Assignment-1).
 
 # Task 1: Data Management - Line Dataset Generation
 Create a numpy zeroes array of size 28x28. Then starting from a random (row, col) draw a line of length {7, 15} and width {1, 3}. Fill this line with color {(255,0,0), (0,0,255)}. Now rotate this line with Image.rotate() function of PIL to required angles and save the images in corresponding class folders using Image.save().
@@ -29,4 +30,4 @@ The various specifications provided in the Layers API :
  3. Optimizer : Gradient Descent, Gradient Descent with Momentum, RMS Prop, Adagrad and Adam. 
  4. Loss Function : Cross-entropy.
 
-Link to final code : [Github](https://github.com/SerChirag/CS-671-1/tree/master/3)
+[More Information](https://github.com/akhileshdevrari/CS-671/blob/master/Assignment-1/Task-3/Neural_Network_Layer_API.pdf)
