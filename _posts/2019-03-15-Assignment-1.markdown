@@ -16,6 +16,8 @@ Detailed problem statement and our code/submissions is available [here][github r
 
 >codes are available [here][task1]
 
+>Video of generated data [Link1(Github)](/assets/PNGImagesVideo.mp4) [Link2(Google drive)](https://drive.google.com/open?id=1TWv_HEhi5w4hHG__5P1upeoIN3x1Q24c)
+
 ## Approach/Methodology
 
 Create a numpy zeroes array of size 28x28. Then starting from a random (row, col) draw a line of length {7, 15} and width {1, 3}. Fill this line with color {(255,0,0), (0,0,255)}. Now rotate this line with Image.rotate() function of PIL to required angles and save the images in corresponding class folders using Image.save().
@@ -61,4 +63,4 @@ The various specifications provided in the Layers API :
  3. Optimizer : Gradient Descent, Gradient Descent with Momentum, RMS Prop, Adagrad and Adam.
  4. Loss Function : Cross-entropy.
 
-[Detailed Report](https://github.com/akhileshdevrari/CS-671/blob/master/Assignment-1/Task-3/Neural_Network_Layer_API.pdf)
+[Detailed Report](/assets/Neural_Network_Layer_API.pdf)
