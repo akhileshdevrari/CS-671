@@ -16,7 +16,7 @@ Detailed problem statement and our code/submissions is available [here][github r
 
 >codes are available [here][task1]
 
->Video of generated data [Link1(Github)](https://github.com/akhileshdevrari/CS-671/tree/master/assets/PNGImagesVideo.mp4) [Link2(Google drive)](https://drive.google.com/open?id=1TWv_HEhi5w4hHG__5P1upeoIN3x1Q24c)
+>Video of generated data [Link1(Github)]({{site.baseurl}}/assets/PNGImagesVideo.mp4) [Link2(Google drive)](https://drive.google.com/open?id=1TWv_HEhi5w4hHG__5P1upeoIN3x1Q24c)
 
 ## Approach/Methodology
 
@@ -63,4 +63,4 @@ The various specifications provided in the Layers API :
  3. Optimizer : Gradient Descent, Gradient Descent with Momentum, RMS Prop, Adagrad and Adam.
  4. Loss Function : Cross-entropy.
 
-[Detailed Report](https://github.com/akhileshdevrari/CS-671/tree/master/assets/Neural_Network_Layer_API.pdf)
+[Detailed Report]({{site.baseurl}}/assets/Neural_Network_Layer_API.pdf)
