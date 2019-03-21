@@ -1,0 +1,7 @@
+# DeepSymphony
+
+## Project Proposal ppt
+
+>[Download as Pdf]({{site.baseurl}}/assets/CS-671.pdf)
+
+>[Youtube Video Link](https://www.youtube.com/watch?v=P7lFD0OE9zM&feature=youtu.be&fbclid=IwAR3gv4YB2-jONgYXhnAvKnqatP_4lbHu3jynKqmGxz6OcrEo1bSuZnENisk)
