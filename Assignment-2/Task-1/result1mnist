@@ -1,0 +1,14 @@
+Train-Accuracy:
+0.9988
+
+Test-Accuracy: 
+0.9864
+
+Average Precision: 
+0.986224068463317
+
+Average Recall: 
+0.9863960182939115
+
+Average F1-score: 
+0.9862661159983415
