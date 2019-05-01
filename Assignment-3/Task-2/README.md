@@ -1,11 +1,18 @@
 Extract the files in the same directory which contains "Data" and "Mask", lets call it root.
 
+Please download the file vgg16_weights_tf_dim_ordering_tf_kernels_notop.h5 file from link below and keep it in root folder:
+
+https://github.com/fchollet/deep-learning-models/releases/download/v0.1/vgg16_weights_tf_dim_ordering_tf_kernels_notop.h5
+
+
 
 ################################################################################################
 
 Make sure you have following files/folders in root:
 
 1. An empty folder named "results". This will contain all the graphs produced after successful execution of code. After is time you want to rerun the code, empty the "results" folder.
+
+2. A file named "vgg16_weights_tf_dim_ordering_tf_kernels_notop.h5". This contains pre-trained weights for FCN8 model, so we don't need to train from scratch.
 
 3. A files named "results.out" this will contain output data like, accuracy and loss.
 

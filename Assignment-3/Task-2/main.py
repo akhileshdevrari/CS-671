@@ -175,7 +175,8 @@ def FCN8( nClasses ,  input_height=224, input_width=224):
     
     
     vgg  = Model(  img_input , pool5  )
-    
+    ## loading VGG weights for the encoder parts of FCN8 so that we don't need to train from scratch
+    vgg.load_weights(VGG_Weights_path) 
     
     n = 4096
     o = ( Conv2D( n , ( 7 , 7 ) , activation='relu' , padding='same', name="conv6", data_format=IMAGE_ORDERING))(pool5)
