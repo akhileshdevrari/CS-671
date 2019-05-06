@@ -1,8 +1,6 @@
-
 ---
 layout: post
 title:  "Interim Project"
-date:   2019-05-05 18:47:43 +0530
 categories: jekyll update
 ---
 
