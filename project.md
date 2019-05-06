@@ -5,10 +5,11 @@ title: DeepSymphony - Conditional Polyphonic Music Generation
 
 ## Aim
 The aim of this project is to produce a polyphonic (multi-instrument) multi-channel accompaniment music track given a single-channel melody.
+
 **Sample Input**
 {% include audio_player.html filename="1_melody.mp3" %}
 
-**Sample Input**
+**Generated Output**
 {% include audio_player.html filename="2_accompaniment.mp3" %}
 
 **Combined Input + Output**
@@ -18,6 +19,7 @@ The aim of this project is to produce a polyphonic (multi-instrument) multi-chan
 ## Data-set
 We have used the [Lakh Midi Dataset](https://colinraffel.com/projects/lmd/) which contains 176,581 deduped MIDI files. From literature review, we have learnt that we need to only select songs that are in the key of C and have a specific beat pattern. This had been done to simplify the process of music genearation.
 <br>
+
 ## Data-preparation
 
 
