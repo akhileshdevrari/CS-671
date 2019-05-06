@@ -9,11 +9,14 @@ The aim of this project is to produce a polyphonic (multi-instrument) multi-chan
 **Sample Input**
 {% include audio_player.html filename="1_melody.mp3" %}
 
-**Sample Input**
+
+**Generated Output**
 {% include audio_player.html filename="2_accompaniment.mp3" %}
+
 
 **Combined Input + Output**
 {% include audio_player.html filename="3_mix.mp3" %}
+
 
 ## Data-set
 
