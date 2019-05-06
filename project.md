@@ -16,7 +16,7 @@ The aim of this project is to produce a polyphonic (multi-instrument) multi-chan
 
 **Combined Input + Output**
 {% include audio_player.html filename="3_mix.mp3" %}
-
+<br/>
 
 ## Data-set
 
