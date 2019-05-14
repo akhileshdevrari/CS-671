@@ -7,13 +7,11 @@ title: DeepSymphony - Conditional Polyphonic Music Generation
 The aim of this project is to produce a polyphonic (multi-instrument) multi-channel accompaniment music track given a single-channel melody.
 
 **Sample Input**
-{% include audio_player.html filename="1_melody.mp3" %}
+{% include audio_player.html filename="7_melody.mp3" %}
 
 **Generated Output**
-{% include audio_player.html filename="2_accompaniment.mp3" %}
+{% include audio_player.html filename="7_all.mp3" %}
 
-**Combined Input + Output**
-{% include audio_player.html filename="3_mix.mp3" %}
 <br>
 
 ## Data-set
