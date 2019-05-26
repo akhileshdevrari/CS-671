@@ -11,22 +11,25 @@ Core point refers to the centre point of a fingerprint image and is found in the
  2. **Converted all images to dimensions to 320*480 pixels using linear interpolation.**
  3. **Converted all images to black-and-white using Adaptive Threshold** : This made sure that only data of finger-print was recorded, and the background gradient noise was filtered out. 
  
-    im = cv2.imread(input_data,cv2.IMREAD_GRAYSCALE)
-    tho = cv2.adaptiveThreshold(im,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY,15,5) 
+
+>     im = cv2.imread(input_data,cv2.IMREAD_GRAYSCALE)
+>     tho = cv2.adaptiveThreshold(im,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C,cv2.THRESH_BINARY,15,5)
 
  4. **Orientation Field using Sobel filters** According [research,](https://www.sciencedirect.com/science/article/pii/S1110866513000030) the core-point is located in a vortex with ridges forming a unique orientation pattern around the core-point. 
  
 
-     def go(img):
-        sobelx = cv2.Sobel(img,cv2.CV_64F,1,0,ksize=5)
-        sobely = cv2.Sobel(img,cv2.CV_64F,0,1,ksize=5)
-        po = 2 * sobelx * sobely
-        go = pow((sobely*sobelx),2)
-        a = 0.5*np.arctan2(sobely,sobelx)
-        oy = cv2.blur(np.sin(a),(5,5))
-        ox = cv2.blur(np.cos(a),(5,5))
-        angle = sigmoid(np.arctan2(oy,ox))
-        return angle
+ 
+
+>     def go(img):
+>         sobelx = cv2.Sobel(img,cv2.CV_64F,1,0,ksize=5)
+>         sobely = cv2.Sobel(img,cv2.CV_64F,0,1,ksize=5)
+>         po = 2 * sobelx * sobely
+>         go = pow((sobely*sobelx),2)
+>         a = 0.5*np.arctan2(sobely,sobelx)
+>         oy = cv2.blur(np.sin(a),(5,5))
+>         ox = cv2.blur(np.cos(a),(5,5))
+>         angle = sigmoid(np.arctan2(oy,ox))
+>         return angle
 
 ![enter image description here](https://lh3.googleusercontent.com/MxDoaggHCjco6TTMWgYX-TAzg9-IT3mK7d3-5O-HL91LrQNKUlbYG8N7a0BLunAiECNul3O260_c "Sample Pre-processing")
 
