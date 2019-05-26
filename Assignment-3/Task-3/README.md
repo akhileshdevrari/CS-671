@@ -37,3 +37,59 @@ Core point refers to the centre point of a fingerprint image and is found in the
 
 I have used a simpler version of AlexNet
 
+ - **Optimizer=Adam(lr=0.0005, decay=0.00001)**
+ - **Loss= 'mean_squared_error'**
+
+**Model Architecture :** 
+
+    # Layer 1
+    alexnet = Sequential()
+    alexnet.add(Conv2D(96, (11, 11), input_shape=(320,480,1),padding='same', kernel_regularizer=l2(0)))
+    alexnet.add(BatchNormalization())
+    alexnet.add(Activation('relu'))
+    alexnet.add(MaxPooling2D(pool_size=(2, 2)))
+
+    # Layer 2
+    alexnet.add(Conv2D(256, (5, 5), padding='same'))
+    alexnet.add(BatchNormalization())
+    alexnet.add(Activation('relu'))
+    alexnet.add(MaxPooling2D(pool_size=(2, 2)))
+
+    # Layer 3
+    alexnet.add(ZeroPadding2D((1, 1)))
+    alexnet.add(Conv2D(512, (3, 3), padding='same'))
+    alexnet.add(BatchNormalization())
+    alexnet.add(Activation('relu'))
+    alexnet.add(MaxPooling2D(pool_size=(2, 2)))
+
+    # Layer 4
+    alexnet.add(ZeroPadding2D((1, 1)))
+    alexnet.add(Conv2D(1024, (3, 3), padding='same'))
+    alexnet.add(BatchNormalization())
+    alexnet.add(Activation('relu'))
+    
+    # Layer 5
+    alexnet.add(ZeroPadding2D((1, 1)))
+    alexnet.add(Conv2D(1024, (3, 3), padding='same'))
+    alexnet.add(BatchNormalization())
+    alexnet.add(Activation('relu'))
+    alexnet.add(MaxPooling2D(pool_size=(2, 2)))
+
+    # Layer 6
+    alexnet.add(Flatten())
+    alexnet.add(Dense(3072))
+    alexnet.add(BatchNormalization())
+    alexnet.add(Activation('relu'))
+    alexnet.add(Dropout(0.5))
+
+    # Layer 7
+    alexnet.add(Dense(4096))
+    alexnet.add(BatchNormalization())
+    alexnet.add(Activation('relu'))
+    alexnet.add(Dropout(0.5))
+
+    # Layer 8
+    alexnet.add(Dense(2))
+    alexnet.add(BatchNormalization())
+    alexnet.add(Activation('relu'))
+    return alexnet
