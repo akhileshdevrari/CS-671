@@ -86,10 +86,13 @@ We tried reducing the batch-size to 1, but the results were more or less the sam
 
 ## LSTM with Truncated Back-Propogation
 
-**Major Changes in this Model : **
+**Major Changes in this Model** 
 
- - Optimizers : After some variations with the optimizers, we figured out RMS-Prop is the easily the best choice. Even the [official Keras Documentation](https://keras.io/optimizers/) recommends using RMS-Prop for Recurrent Neural Networks.
+ - **Optimizers :** <br>After some variations with the optimizers, we figured out RMS-Prop is the easily the best choice. Even the [official Keras Documentation](https://keras.io/optimizers/) recommends using RMS-Prop for Recurrent Neural Networks.<br>
 The image ([Source](https://imgur.com/a/Hqolp#NKsFHJb)) below shows the performance shows the general performance of various Optimizers
  <br>![Various Optimizer Performance. ](https://lh3.googleusercontent.com/JxVi4hkoPqWFPoBpt7_78Nlsfbz_HQ5R6eZarS6A_ykTpuYyjI53olOMKeRBD8sWisQANG0PvJOg "Various Optimizer Performance")
  <br>
- - Truncating Back-Propogation : 
+ - **Truncating Back-Propogation :** <br> Back-Propogation Through Time can be slow to train LSTM on problems with very long input sequences. In addition to speed, the accumulation of gradients over so many timesteps can result in a shrinking of values to zero, or a growth of values that eventually overflow, or explode. <br> So, we divided the sequence into smaller sub-sequences for implementing Truncated Back-Propogation Through Time. <br>
+ 
+ - **Many-to-One-to-Many Sequence-to-Sequence** <br> <br>![Andrew Karpathy](https://lh3.googleusercontent.com/88gKDJZL5c9hkenCk088QLzVxz4ChCwtZ69tPaKeuohEm24esaBkXKmZ5ICpW-j1-kTTlr70VZ20)
+[Source](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)
