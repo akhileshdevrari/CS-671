@@ -86,7 +86,7 @@ We tried reducing the batch-size to 1, but the results were more or less the sam
 
 ## LSTM with Truncated Back-Propogation
 
-**Major Changes in this Model** 
+### **Major Changes in this Model**
 
  - **Optimizers :** <br>After some variations with the optimizers, we figured out RMS-Prop is the easily the best choice. Even the [official Keras Documentation](https://keras.io/optimizers/) recommends using RMS-Prop for Recurrent Neural Networks.<br>
 The image ([Source](https://imgur.com/a/Hqolp#NKsFHJb)) below shows the performance shows the general performance of various Optimizers
@@ -97,3 +97,37 @@ The image ([Source](https://imgur.com/a/Hqolp#NKsFHJb)) below shows the performa
  
  - **Many-to-One-to-Many Sequence-to-Sequence** <br> <br>![Andrew Karpathy](https://lh3.googleusercontent.com/88gKDJZL5c9hkenCk088QLzVxz4ChCwtZ69tPaKeuohEm24esaBkXKmZ5ICpW-j1-kTTlr70VZ20)
 [Source](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)
+
+### **Variations Tried**
+
+ - **Model-1 :** 2-layer Bi-LSTM with sequence_length = 40
+ - **Model-2 :** 2-layer Bi-LSTM with sequence_length = 20
+ - **Model-3 :** 4-layer Bi-Stacked LSTM with sequence_length = 10 <br>
+ ![enter image description here](https://lh3.googleusercontent.com/usd3l8iAeGaY8Lg_Nzy3xQh26GbFytZtRMk-9T2EpApfWTIRcJ9d0Y35-CbTk97Vd81GlpZyaI3G)
+
+### **Results**
+
+**Given Melody :** 
+
+![enter image description here](https://akhileshdevrari.github.io/CS-671/img/x.png)
+
+
+**Expected Output :**
+
+![enter image description here](https://akhileshdevrari.github.io/CS-671/img/oriy.png) 
+
+**Model-1 : 40-timestamp sequence**
+
+![enter image description here](https://akhileshdevrari.github.io/CS-671/img/40.png)
+
+**Model-2 : 20-timestamp sequence**
+
+![enter image description here](https://akhileshdevrari.github.io/CS-671/img/20.png)
+
+**Model-3 : 10-timestamp sequence**
+
+![enter image description here](https://akhileshdevrari.github.io/CS-671/img/10.png)
+
+## Conclusion
+
+We combined the outputs from various models with different volumes, to get a final output.
