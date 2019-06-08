@@ -130,4 +130,24 @@ The image ([Source](https://imgur.com/a/Hqolp#NKsFHJb)) below shows the performa
 
 ## Conclusion
 
-We combined the outputs from various models with different volumes, to get a final output.
+We see that for sub-sequence length 20 and 10, the LSTM is able to **accurately learn the melody part** and some part of accompaniment. 
+This may be due to the **varying complex nature of accompaniment and the less number of epochs.**
+
+**Sample Input**
+{% include audio_player.html filename="x.mp3" %}
+
+**Expected Output**
+{% include audio_player.html filename="y.mp3" %}
+
+**Output-1**
+{% include audio_player.html filename="10.mp3" %}
+
+**Output-2**
+{% include audio_player.html filename="20.mp3" %}
+
+## Learning Outcome
+
+ - Truncated Back-propogation
+ - Different LSTM architectures for Seq-2-Seq
+ - Working with music data(MIDI)
+ - Effects of different optimizers on LSTMs
